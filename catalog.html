@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title> HTML-Academy:Техномарт</title>
-    <link>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Cuprum?query=cuprum#standard-styles">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans?query=pt+sans">
+    <link rel="stylesheets" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
   	<header class="main-header">
@@ -14,9 +17,9 @@
         <form action="#" method="get">
           <input class="header-search" type="text" name="search" placeholder="Поиск">
         </form>
-        <a href="">Закладки</a>        
-        <a href="">Корзина</a>
-        <a href="">Оформить заказ</a>
+        <a class="bookmarks" href="">Закладки</a>        
+        <a href="basket">Корзина:0</a>
+        <a href="order">Оформить заказ</a>
       </div>
 
         <div class="header-heading">
@@ -30,10 +33,12 @@
 
 
         <div class="user-block">
-          <a class="user-login " href="">Равшан Джамшутович</a>
+          <a class="user-account user-login " href="">Равшан Джамшутович</a>
           <a class="user-logout" href=""></a>
-          <a class="user-orders" href="">Мои заказы</a>
-          <a class="user-account" href="">Личный кабинет</a>
+          <div>
+            <a class="user-link" href="">Мои заказы</a>
+            <a class="user-link" href="">Личный кабинет</a>
+          </div>
         </div>
 
       <nav class="main-navigation">
@@ -51,10 +56,10 @@
 
     <main>
       <div class="catalog-page-heading">
-        <h2>Перфораторы</h2>
+        <h2 class="section-heading">Перфораторы</h2>
       </div>
   		<section>
-        <h2>Навигация по каталогу</h2>
+        <h2 class="visually-hidden">Навигация по каталогу</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-icon">
             <a href="index.html">Главная</a>
@@ -71,23 +76,21 @@
           <li class="breadcrumbs-icon">   
             <a href="">Инструмент</a>
           </li>
-
-
-          <!--<span class="breadcrumbs-icon"></span>-->
+           <!--<span class="breadcrumbs-icon"></span>-->
 
           <li class="breadcrumbs-icon breadcrumbs-current">Перфораторы</li>
          </ul>
       </section>
 
       <section>
-        <div class="row-wrapper">
+        <div class="row-wrapper filter">
         <h2>Фильтр:</h2>
         </div>
         <div class="filter-wrapper">
           <form action="#" method="get">  <!---->
       
             <div class="price-filter">
-                <h3>Цена:</h3>
+                <h3 class="form-heading">Цена:</h3>
                 
                 <!--<div class="range-price"
                     </div>
@@ -105,7 +108,7 @@
               </div>-->
 
               <div class="manufacturers-filter">
-                <h3>Производители:</h3>
+                <h3 class="form-heading">Производители:</h3>
                 <ul class="manufacturers-list">
                   <li>
                     <input type="checkbox" value="Bosch" checked>
@@ -134,7 +137,7 @@
               </div>
 
               <div class="power-supply-filter"> 
-                <h3>Питание:</h3>
+                <h3 class="form-heading">Питание:</h3>
                 <ul class="power-supply-list"> 
                   <li>
                     <input type="radio" id="button-1" value="battery">
@@ -151,9 +154,9 @@
         </section>
 
         <section>
-          <div class="row-wrapper">
-            <h2>Сортировка</h2>
-            <ul class="sorter-wrapper">   
+          <div class="row-wrapper sorter">
+            <h2>Сортировка:</h2>
+            <ul class="sort-list">   
               <li>   
                 <a href="#" class="sort-item sort-selected">По цене</a>
               </li>
@@ -166,7 +169,7 @@
             </ul>
           </div>
 
-
+          <ul class="product-list">
             <li class=product-item>
               <div class="image-block">
                 <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
@@ -271,13 +274,9 @@
               <span class="new-price">12500 P.</span>
                 </div>
             </li>
+           </ul>
           </div>
         </section>
-
-          <ul class="products-cards">
-          </ul>
-
-
           <ul class="pagination-list">
               <li class="pagination-item pagination-current"><a>1</a></li>
               <li class="pagination-item"><a href="">2</a></li>
@@ -285,8 +284,8 @@
               <li class="pagination-item pagination-next"><a href="">Следующая</a></li>
         </ul>
             
-        <article>
-            <h2>Пара слов о перфораторах</h2>
+        <article class="articles">
+            <h2 class="section-heading">Пара слов о перфораторах</h2>
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
               Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
               В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
@@ -325,14 +324,14 @@
             <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
           </div>
 
-          <div class="socials">
+           <div class="socials">
             <ul class="social-list">
-              <!--span class="visually-hidden"-->
-              <li><a class="social-button" href="">Вконтакте</a></li> 
-              <li><a class="social-button" href="">Фейсбук</a></li>
-              <li><a class="social-button" href="">Инстаграм</a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span></a></li> 
+              <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span></a></li>
             </ul>
           </div>
+
 
           <div class="modal modal-feedback">
             <p class="modal-description">Обратная связь:</p>   <!-- модальное окно form -->
@@ -345,6 +344,5 @@
           </div>
         </div>
     </footer>
-
 </body>
 </html>
