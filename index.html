@@ -22,7 +22,7 @@
         <div class="order-block">  <!--add class-->
         <a class="bookmarks"href="">Закладки</a>
         <a class="basket" href="">Корзина</a>
-        <a class="" href="">Оформить заказ</a>
+        <a class="order" href="">Оформить заказ</a>
       </div>   
       </div>       
 
@@ -38,8 +38,8 @@
            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
   
         <div class="user-block">
-          <a class="user-login" href="">Войти</a>  <!--Форма-->
-          <a class="registration" href="">Регистрация</a> <!--Форма-->
+          <a class="user-account user-login" href="">Войти</a>  <!--Форма-->
+          <a class="user-account" href="">Регистрация</a> <!--Форма-->
          </div>
 
         <nav class="main-navigation">
@@ -55,13 +55,13 @@
         </nav>
     </header>
     <main>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1> <!--font-style-->
+      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1> <!--font-style-->
       <section>
 
 
-          <h2>Промо</h2>
+          <h2 class="section-heading visually-hidden">Промо</h2>
          <ul class="promo-list">
-            <li class="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  <!-- new-->
+            <li clase="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  <!-- new-->
             <li class="promo-box promo-instruments"><p>Инструменты</p> <a class="button transparent-button" href="">На все случаи</a></li> 
             <li class="promo-box  promo-technics"><p>Техника</p> <a class="button transparent-button" href="">Для стройки</a></li>
             <li>
@@ -91,7 +91,7 @@
 
       <section>
         <div class="popular">
-          <h2>Популярные товары:</h2>  
+          <h2 class="section-heading">Популярные товары:</h2>  
           <a class="button red-button" href="">Все популярные товары</a> 
         </div>
 
@@ -152,7 +152,7 @@
 
           <section>
             <div class="popular">
-              <h2>Популярные производители:</h2>  
+              <h2 class="section-heading">Популярные производители:</h2>  
               <a href="" class="button red-button">Все производители</a> 
             </div >
 
@@ -204,7 +204,7 @@
 
           <div class="services">
 
-            <h2>Сервисы</h2> 
+            <h2 class="section-heading">Сервисы</h2> 
             <p class=>Хороший интернет магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
              </p>
 
@@ -247,7 +247,7 @@
         </section>
         <section class="about-us">
           <div class="about-company">
-            <h2>Компания "Техномарт"</h2> 
+            <h2 class="section-heading">Компания "Техномарт"</h2> 
              <p> Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.
              </p>
 
@@ -258,23 +258,28 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button red-button" href="">Подробнее о компании</a> <!--class red-button-->
+            <a class="button red-button" href="">Подробнее о компании</a> 
           </div>
+        </section>
       
              <!--modal-->
+          <section>
             <div class="contact-company">
-              <h2>Контакты</h2>
+              <h2 class="section-heading">Контакты</h2>
               <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
               <a href=""> 
                  <img src="" width="300" height="158" alt="Большая Конюшенная ул., д.19">
               </a>
             </div>
-
-          <!--modal-->
+         <!--modal-->
            <div class="feedback">
-              <a class="button red-button" href="#feedback.html">Заблудились? Напишите нам!</a> <!--class red button-->
-           </div>  
-        </section>
+              <a class="button red-button" href="#feedback.html">Заблудились? Напишите нам!</a> 
+
+              <!-- <div class="modal modal-feedback">
+                <button class="modal-close" type="button">Закрыть</button>
+                <form class="feedback-form" action="" method="post">
+                  <label> -->
+       </section>
     </main>
 
     
@@ -313,10 +318,9 @@
 
           <div class="socials">
             <ul class="social-list">
-              <!--span class="visually-hidden"-->
-              <li><a class="social-button" href="">Вконтакте</a></li> 
-              <li><a class="social-button" href="">Фейсбук</a></li>
-              <li><a class="social-button" href="">Инстаграм</a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span></a></li> 
+              <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span></a></li>
             </ul>
           </div>
 
@@ -324,6 +328,7 @@
             <p class="modal-description">Обратная связь:</p>   <!-- модальное окно form -->
             <a class="yellow-link" href="">mail.htmlacademy.ru</a>
             <button class="modal-close" type="button">Закрыть</button>
+            /!--форма-->
           </div>
           <div class="designed-by">
             <p>Разработано:</p>
