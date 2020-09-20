@@ -11,15 +11,17 @@
   <body class="page-body">
   	<header class="main-header">
       <div class="top-header-block">
-        <div>  
-        <a href="index.html" class="logo">Техномарт</a> 
+         <div class="logo-wrapper">
+           <a href="index.html" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
         </div>
         <form action="#" method="get">
           <input class="header-search" type="text" name="search" placeholder="Поиск">
         </form>
-        <a class="bookmarks" href="">Закладки</a>        
-        <a href="basket">Корзина:0</a>
-        <a href="order">Оформить заказ</a>
+       <ul class="order-list"> 
+          <li class="order-item bookmarks"><a href="">Закладки</a></li>
+          <li class="order-item basket"><a href="">Корзина</a></li>
+          <li class="order-item order"><a href="">Оформить заказ</a></li>
+        </ul>
       </div>
 
         <div class="header-heading">
@@ -172,7 +174,7 @@
           <ul class="product-list">
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -184,7 +186,7 @@
 
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -195,7 +197,7 @@
 
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -207,7 +209,7 @@
             <!--new-->
             <li class="product-item">            
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
+                <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
               </div>
               <div class="description-block">
               <p>Перфоратор BOSCH  BFG 3000</p>  
@@ -219,7 +221,7 @@
              
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -231,7 +233,7 @@
 
             <li class="product-item">
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
+                <img src="img/bosch2000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 2000</p> 
@@ -243,7 +245,7 @@
 
             <li class="product-item">            
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
+                <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
               </div>
               <div class="description-block">
               <p>Перфоратор BOSCH  BFG 3000</p>  
@@ -254,7 +256,7 @@
 
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -265,7 +267,7 @@
 
               <li class="product-item">
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
+                <img src="img/bosch2000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 2000</p> 
@@ -295,8 +297,8 @@
       <footer class="main-footer">
       <div class="top-footer">
 
-        <div class="logo">
-          <h1>Техномарт</h1>
+        <div class="logo-wrapper">
+           <a href="index.html" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
         </div>
 
         <div class="contacts-footer">
@@ -324,23 +326,24 @@
             <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
           </div>
 
-           <div class="socials">
+        <div class="socials">
             <ul class="social-list">
-              <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span></a></li> 
-              <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
-              <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button" href=""><img src="img/icon-vk.png" alt="Вконтакте"></a></li> 
+              <li><a class="social-button" href=""><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">
+                <!--<span class="visually-hidden">Фейсбук</span>--></a></li>
+              <li><a class="social-button" href=""><img src="img/icon-insta.png" width="21" height="21" alt="Инстаграм"></a></li>
             </ul>
           </div>
 
 
-          <div class="modal modal-feedback">
-            <p class="modal-description">Обратная связь:</p>   <!-- модальное окно form -->
+          <div class="feedback-link">
+            <p>Обратная связь:</p>  
             <a class="yellow-link" href="">mail.htmlacademy.ru</a>
-            <button class="modal-close" type="button">Закрыть</button>
-          </div>
+           </div>
+           
           <div class="designed-by">
             <p>Разработано:</p>
-            <a class="yellow-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <a class="yellow-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
     </footer>

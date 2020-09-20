@@ -13,17 +13,17 @@
     <header class="main-header">
 
       <div header class="top-header-block">
-        <div>  
-          <a href="" class="logo">Техномарт</a> 
+        <div class="logo-wrapper">
+           <a href="" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
         </div>
-        <form action="#" method="get">
+        <form class action="#" method="get">
           <input class="header-search" type="text" name="search" placeholder="Поиск:">
         </form>
-        <div class="order-block">  <!--add class-->
-        <a class="bookmarks"href="">Закладки</a>
-        <a class="basket" href="">Корзина</a>
-        <a class="order" href="">Оформить заказ</a>
-      </div>   
+        <ul class="order-list"> 
+          <li class="order-item bookmarks"><a href="">Закладки</a></li>
+          <li class="order-item basket"><a href="">Корзина</a></li>
+          <li class="order-item order-button"><a href="">Оформить заказ</a></li>
+        </ul>
       </div>       
 
 
@@ -38,8 +38,8 @@
            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
   
         <div class="user-block">
-          <a class="user-account user-login" href="">Войти</a>  <!--Форма-->
-          <a class="user-account" href="">Регистрация</a> <!--Форма-->
+          <a class="user-account user-login" href="">Войти</a>  
+          <a class="user-account" href="">Регистрация</a> 
          </div>
 
         <nav class="main-navigation">
@@ -55,21 +55,22 @@
         </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1> <!--font-style-->
+      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1>
       <section>
 
 
           <h2 class="section-heading visually-hidden">Промо</h2>
          <ul class="promo-list">
-            <li clase="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  <!-- new-->
+            <li class="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  <!-- new-->
             <li class="promo-box promo-instruments"><p>Инструменты</p> <a class="button transparent-button" href="">На все случаи</a></li> 
             <li class="promo-box  promo-technics"><p>Техника</p> <a class="button transparent-button" href="">Для стройки</a></li>
             <li>
             
 
               <div class="slider-box">
-                <input type="radio"  id="slide-1" value="rock-drill" name="switch">
-                <input type="radio" id="slide-2" value="drill" name="switch">
+
+                <input type="radio"  id="slide-1" value="rock-drill" name="promo-slide" checked>
+                <input type="radio" id="slide-2" value="drill" name="promo-slide">
                 <ul class="slider-list">
                   <li class="slide slide-1">
                     <span class="slide-heading">Перфораторы</span>
@@ -82,7 +83,18 @@
                     <a href="catalog.html" class="button red-button">Перейти в каталог</a>
                   </li>
                 </ul>
+                <div class="slider-switch">
+                  <label class="slider-switch-1" for="slide-1"></label>
+                  <label class="slider-switch-2" for="slide-2"></label>
+                </div>
+                <div class="slider-arrow">
+                  <label class="slader-arrow-1 right" for="slide-2"><img src="img/icon-right.svg"></label>
+                  <label class="slider-arrow-2 left" for="slide-1"></label>
+                </div>
             </div>
+         
+
+
           <li class="promo-box promo-discounts"><p>Скидки 50%</p><a class="button transparent-button" href="">На 350 товаров</a></li>
           <li class="promo-box promo-delivery"><p>Доставка</p><a class="button transparent-button" href="">Доставка</a></li>
          </ul>
@@ -99,21 +111,20 @@
             <li class="product-item">
 
               <div class="image-block">
-                <img src="" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
+                <img src="img/bosch9000.png" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 9000</p>
               </div>
               <span class="old-price"><s>32500 Р.</s></span>  
               <span class="new-price">22500 P.</span> 
-              <!-- <div class="item-hover"> <a class="button button-buy" href="">Купить</a> <a class="button button-bookmarks" href="">В закладки</a></div>-->
-              </li>
+            </li>
 
               <!--new-->
 
             <li class="product-item">            
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
+                <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
               </div>
               <div class="description-block">
               <p>Перфоратор BOSCH  BFG 3000</p>  
@@ -125,7 +136,7 @@
 
             <li class=product-item>
               <div class="image-block">
-                <img src="" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 6000</p>
@@ -138,7 +149,7 @@
 
             <li class="product-item">
               <div class="image-block">
-                <img src="" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
+                <img src="img/bosch2000.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
               </div>
               <div class="description-block">
                 <p>Перфоратор BOSCH  BFG 2000</p> 
@@ -146,8 +157,15 @@
               <span class="old price"></span>
               <span class="new-price">12500 P.</span>
                 </div>
+                
+            <div class="product-pop-up">
+               <a class="button button-buy" href="">Купить</a> 
+               <a class="button button-bookmarks" href="">В закладки</a>
+            </div>
               </li>
             </ul>
+
+
           </section>
 
           <section>
@@ -158,43 +176,43 @@
 
           
             <ul class="manufacturers-list">
-              <li class="manufacrurers-item"> 
-                <a href="">
-                <img src="bosch.logo.png" width="" height="" alt="BOSCH ">  
+              <li class="manufacturers-item"> 
+                <a  href="">
+                <img src="img/bosch.png" width="" height="" alt="BOSCH ">  
                 </a>
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="">
-                <img src="makita.logo.png" width="" height="" alt="Makita">  
+                <img src="img/makita.png" width="" height="" alt="Makita">  
                 </a>
-              </li class="manufacrurers-item">
-              <li class="manufacrurers-item"> 
+              </li>
+              <li class="manufacturers-item"> 
                 <a href=""> 
-                <img src="dewalt.logo.png" width="" height="" alt="DeWALT">  
+                <img src="img/dewalt.png" width="" height="" alt="DeWALT">  
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="">
-                <img src="interskol.logo.png" width="" height="" alt="ИНТЕРСКОЛ">  
+                <img src="img/interskol.png" width="" height="" alt="ИНТЕРСКОЛ">  
                 </a>
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="#">
-                <img src="hitachi.logo.png" width="" height="" alt="HITACHI">  
+                <img src="img/hitachi.png" width="" height="" alt="HITACHI">  
                 </a>
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="">
-                <img src="lg.logo.png" width="" height="" alt="LG">  
+                <img src="img/lg.png" width="" height="" alt="LG">  
                 </a>
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="">
-                <img src="aeg.logo.png" width="" height="" alt="AEG">  
+                <img src="img/aeg.png" width="" height="" alt="AEG">  
                 </a>
               </li>
-              <li class="manufacrurers-item">
+              <li class="manufacturers-item">
                 <a href="">
-                <img src="metabo.logo.png" width="" height="" alt="metabo">  
+                <img src="img/metabo.png" width="" height="" alt="metabo">  
               </li>
             </ul>
         
@@ -261,25 +279,31 @@
             <a class="button red-button" href="">Подробнее о компании</a> 
           </div>
         </section>
-      
-             <!--modal-->
-          <section>
+        <section>
             <div class="contact-company">
               <h2 class="section-heading">Контакты</h2>
               <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
               <a href=""> 
-                 <img src="" width="300" height="158" alt="Большая Конюшенная ул., д.19">
+                 <img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., д.19">
               </a>
             </div>
-         <!--modal-->
-           <div class="feedback">
+         <!--div class="modal modal-map"-->
+           <div class="feedback-wrapper">
               <a class="button red-button" href="#feedback.html">Заблудились? Напишите нам!</a> 
 
-              <!-- <div class="modal modal-feedback">
-                <button class="modal-close" type="button">Закрыть</button>
-                <form class="feedback-form" action="" method="post">
-                  <label> -->
-       </section>
+              <div class="modal modal-feedback">
+                    <form class="feedback-form" type="file" action="" method="post">
+                      <label for="user-name">Ваше имя</label>
+                      <input class="feedback-field" type="text" id="user-name" name="user" placeholder="Имя Фамилия">
+                      <label for="user-email">Ваш e-mail</label>
+                      <input class="feedback-field" id="user-email" type="email" name="user" placeholder="email@example.com">
+                      <label for="user-text">Текст письма</label>
+                      <input class="feedback-field" id="user-text" type="text" name="user" placeholder="В свободной форме">
+                      <button class="modal-close" type="button">Отправить</button>
+                    </form>
+                     <button type="button">Закрыть</button>
+              </div>
+          </section>
     </main>
 
     
@@ -287,8 +311,8 @@
     <footer class="main-footer">
       <div class="top-footer">
 
-        <div class="logo">
-          <h1>Техномарт</h1>
+        <div class="logo-wrapper">
+           <a href="" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
         </div>
 
         <div class="contacts-footer">
@@ -298,7 +322,7 @@
           <ul class="navigation-footer-list">
            <li><a href="">Компания</a></li>
            <li><a href="">Новости</a></li>
-            <li><a href="">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="">Доставка</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
@@ -318,24 +342,26 @@
 
           <div class="socials">
             <ul class="social-list">
-              <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span></a></li> 
-              <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
-              <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button" href=""><img src="img/icon-vk.png" alt="Вконтакте"></a></li> 
+              <li><a class="social-button" href=""><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">
+                <!--<span class="visually-hidden">Фейсбук</span>--></a></li>
+              <li><a class="social-button" href=""><img src="img/icon-insta.png" width="21" height="21" alt="Инстаграм"></a></li>
             </ul>
           </div>
 
-          <div class="modal modal-feedback">
-            <p class="modal-description">Обратная связь:</p>   <!-- модальное окно form -->
+          <div class="feedback-link">
+            <p>Обратная связь:</p>  
             <a class="yellow-link" href="">mail.htmlacademy.ru</a>
-            <button class="modal-close" type="button">Закрыть</button>
-            /!--форма-->
-          </div>
+           </div>
           <div class="designed-by">
             <p>Разработано:</p>
-            <a class="yellow-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <a class="yellow-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
     </footer>
 
 </body>
 </html>
+
+
+

@@ -31,7 +31,9 @@
 	--special-light-yellow: #ffd180;
 	--extra-dark-cyan-blue: #293449;
 	--slider-background: rgba(0, 0, 0, 0.0001);
+	--logo-shadow-red: rgba(0, 0, 0, 0.24);
 	--beige: #f7f3ec;
+	--super-extra-dark-blue: #212a3a;
 
 	/*f2f6f8*/
 	
@@ -87,7 +89,7 @@ img {
 }
  /*Заголовки*/ 
 
-/*h2 Проверить в каталоге!!!!*/
+
  .section-heading {
  	font-family: inherit;
 	font-style: normal;
@@ -97,12 +99,12 @@ img {
 	text-transform: uppercase;
 }
 
-/*.visually-hidden {
+.visually-hidden {
 	visibility: hidden;
-}*/
+}
 
 
-/*Header*/
+ /*Header*/
 
 .main-header {
 	font-size: 18px;
@@ -115,27 +117,73 @@ img {
 	color: white;
 }
 
-a.logo {
-	/*position:*/
+
+.logo {
+	position: absolute;
 	width: 220px;
+	height: 47px;
+	text-align: center;
+	vertical-align: middle;
 	background-color: var(--basic-red);
-	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24)
-	text-transform: uppercase;
-	color: white;
-	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+	box-shadow: inset 0px -5px 0px var(--logo-shadow-red);
+}
+ 
+
+.header-search {
+	width: 271px;
+	height: 42px;
+	background: var(--extra-dark-cyan-blue) url("../img/icon-search.png") no-repeat 17px 13px;
+	padding-left: 42px;
+	border: none;
+	font-size: 18px;
+	color: var(--white);
 }
 
-/*.logo:after {
+.order-list {
+	list-style: none;
+
+}
+
+.order-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+	height: 42px;
+	border: none;
+}
+
+/*:before*/
+.bookmarks {
+	background: url("../img/bookmarks-icon.png") no-repeat 20px center;
+}
+
+.basket {
+	background: url("../img/basket-icon.png") no-repeat 20px center;
+}
+
+.order-button {
+	background-color: var(--basic-green);
+}
+
+.user-account {
+	display: inline-block;
+	height: 45px;
+	background-color: var(--white);
+	padding-top: 12px;
+}
+
+.user-login:after {
+	content:"";
+	display: "block";
+	width: 14,17px;
+	height: 17px;
 	position: absolute;
-	content: "";
-	width: 220px;
-	height: 
-	background-color: var(--special-red);
-}*/
+	background-image: white url("../img/icon-login.png") no-repeat 14px center;
+}
 
 .header-heading {
 	width: 197px;
-	/*padding:*/
 	font-size: 16px;
 	font-weight: normal;
 	font-style: italic;
@@ -208,9 +256,26 @@ line-height: 24px;
 	line-height: 30px;
 }
 
+
+.transparent-button a {
+	width: 135px;
+	height: 38px;
+	background-color: var(--white);
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+.transparent-button a:hover { 
+	background-color: var(--extra-light-grey);
+	opacity: 0.3;
+}
+
+.transparent-button a:active {
+
+}
+
 .promo-materials {
-	background-color: var(--special-yellow);
-	/*background-image*/
+	background: var(--special-yellow) url("../img/materials-icon.png") no-repeat 213px center;
 }
 
 /*new::after {
@@ -218,8 +283,7 @@ line-height: 24px;
 	}*/
 
 .promo-instruments {
-	background-color: var(--special-blue);
-	/*background-image*/
+	background: var(--special-blue) url("../img/instruments-icon.png") no-repeat 194px center;
 }
 
 
@@ -232,19 +296,30 @@ line-height: 24px;
 .slider-box {
 	width: 620px;
 	height: 266px;
-	left: 130px;
-	top: 522px;
+	overflow: hidden;
 	/*background-color: var(--light-grey);*/
 }
 
+/*input[type="radio"] {
+	visibility: hidden;
+}
+
+.slide-list {
+	list-style: none;
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+*/
 .slide-1 {
-	background: var(--light-grey) url() no-repeat;
+	width: inherit;
+	height: 100%;
+	background: var(--light-grey) url("../img/slider-rock-drill.jpg") no-repeat;
 }
 
-.slide-2 {
+/*.slide-2 {
 	background: var(--light-grey) url() no-repeat;
-
-}
+*/
 
 .slide-heading {
 	font-weight: bold;
@@ -259,36 +334,16 @@ line-height: 24px;
 }
 
 .promo-technics {
-	background-color: var(--special-lilac);
-	/*background-image*/
+	background: var(--special-lilac) url("../img/technics-icon.png") no-repeat 191px center;
 }
 
 .promo-discounts {
-	background-color: var(--special-lightgreen);
-	/*background-image*/
+	background: var(--special-lightgreen) url("../img/discounts-icon.png") no-repeat 196px center;
 }
-
-
 
 .promo-delivery {
-	background-color: var(--special-yellow);
-	/*background-image*/
+	background: var(--special-yellow) url("../img/delivery-icon.png") no-repeat 191px center;
 }
-
-.transparent-button {
-	width: 135px;
-	background-color: var(--white);
-	opacity: 0.3;
-	border-radius: 3px;
-}
-
-.transparent-button a:hover { 
-	background-color: var(--extra-light-grey);
-	opacity: 0.3;
-}
-
-
-a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 
 
 .popular {
@@ -317,6 +372,8 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 	width: 220px;
 	height: 318px;
 	background-color: inherit;
+	text-align: center;
+	border: 1px solid var(--border-grey);
 }
 
 .description-block p {
@@ -328,7 +385,7 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 }
 
 .image-block {
-	background-color: var(--light-grey);
+	
 }
 
 
@@ -339,11 +396,17 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 	width: 940 px;
 }
 
-.manufacrurers-item {
+.manufacturers-item {
 	width: 220px;
 	height: 145px;
 	border: 1px solid var(--border-grey);
+	text-align:  center;
+	background-color: rgba(0, 0, 0, 0.0001); /*в  кастомные свойства*/
+}
 
+.manufacturers-item:hover {
+	background-color: var(--white);
+	border: none;
 }
 
 /*Servises*/
@@ -441,19 +504,25 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 
 
 
-.social-list {
+.social-list li {
   list-style: none;
-}
+ }
 
 /* Social button */
 
-.social-button {
-  color: inherit;
+.social-button li{
+	display: inline-block;
+	background-color: linear-gradient(0deg, var(--super-extra-dark-blue), #212A3A);
+	text-align: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
 }
 
-/*.social-button:hover,
-.social-button: active {
-  background-color: var(--basic-white)*/
+.social-button:hover {
+	background-color: red;
+
+}
 
 
 /*Каталог*/
@@ -556,4 +625,34 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 .articles {
 	background-color: var(--basic-background);
 	font-family: "PT Sans", Arial, sans-serif;
-	}
+}
+
+/*Modal*/
+.modal-feedback{
+	/*visibility: hidden;
+	width: 620px;
+	height: 430px;*/
+}
+.modal-feedback label {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.feedback-field {
+	width: 220px;
+	height: 38px;
+	font-family: "PT Sans", Arial, sans-serif;
+}
+
+
+/*pop-up*/
+
+
+
+
+
+
+
+
+
+
