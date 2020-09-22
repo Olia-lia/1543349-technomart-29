@@ -12,36 +12,37 @@
   <body class="page-body">
     <header class="main-header">
 
-      <div header class="top-header-block">
-        <div class="logo-wrapper">
+      <div class="top-header-bar">
+        <div header class="top-header-block">
+          <div class="logo-wrapper">
            <a href="" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
-        </div>
-        <form class action="#" method="get">
-          <input class="header-search" type="text" name="search" placeholder="Поиск:">
-        </form>
-        <ul class="order-list"> 
-          <li class="order-item bookmarks"><a href="">Закладки</a></li>
-          <li class="order-item basket"><a href="">Корзина</a></li>
-          <li class="order-item order-button"><a href="">Оформить заказ</a></li>
-        </ul>
-      </div>       
+          </div>
+          <form class action="#" method="get">
+            <input class="header-search" type="text" name="search" placeholder="Поиск:">
+          </form>
+          <ul class="order-list"> 
+            <li class="order-item bookmarks"><a href="">Закладки</a></li>
+            <li class="order-item basket"><a href="">Корзина</a></li>
+            <li class="order-item order-button"><a href="">Оформить заказ</a></li>
+           </ul>
+        </div> 
+      </div>    
+      
+      <div class="middle-bottom-header-bar">
+        <div class="middle-header-block">
+            <div class="header-heading">
+              <p>Интеренет-магазин строительных материалов и инструментов для ремонта</p></div>
+            <div class="phone-number">
+              <p>+7 (812) 555-05-05</p></div>
+            <div class="adress">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
+            <div class="user-block">
+              <a class="user-account user-login" href="">Войти</a>  
+              <a class="user-account" href="">Регистрация</a> 
+            </div>
+          </div>
 
-
-        <div class="header-heading">
-          <p>Интеренет-магазин строительных материалов и инструментов для ремонта</p>
-        </div>
-
-    
-        <div class="phone-number">
-          <p>+7 (812) 555-05-05</p></div>
-        <div class="adress">
-           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
-  
-        <div class="user-block">
-          <a class="user-account user-login" href="">Войти</a>  
-          <a class="user-account" href="">Регистрация</a> 
-         </div>
-
+      <div class="main-navigation-bar">
         <nav class="main-navigation">
           <ul class="navigation-list">
             <li><a href="">Главная</a></li>
@@ -53,24 +54,22 @@
             <li><a href="">Контакты</a></li>
           </ul> 
         </nav>
+      </div>
     </header>
-    <main>
+    
+    <main class="container">
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1>
+     
       <section>
-
-
-          <h2 class="section-heading visually-hidden">Промо</h2>
          <ul class="promo-list">
-            <li class="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  <!-- new-->
+            <li class="promo-box promo-materials"><p>Материалы</p> <a class="button transparent-button" href="">На любой вкус</a></li>  
             <li class="promo-box promo-instruments"><p>Инструменты</p> <a class="button transparent-button" href="">На все случаи</a></li> 
             <li class="promo-box  promo-technics"><p>Техника</p> <a class="button transparent-button" href="">Для стройки</a></li>
-            <li>
+           
+            <li class="slider-box"> 
             
-
-              <div class="slider-box">
-
-                <input type="radio"  id="slide-1" value="rock-drill" name="promo-slide" checked>
-                <input type="radio" id="slide-2" value="drill" name="promo-slide">
+                <!--<input type="radio"  id="slide-1" value="rock-drill" name="promo-slide" checked>
+                <input type="radio" id="slide-2" value="drill" name="promo-slide">-->
                 <ul class="slider-list">
                   <li class="slide slide-1">
                     <span class="slide-heading">Перфораторы</span>
@@ -88,24 +87,26 @@
                   <label class="slider-switch-2" for="slide-2"></label>
                 </div>
                 <div class="slider-arrow">
-                  <label class="slader-arrow-1 right" for="slide-2"><img src="img/icon-right.svg"></label>
+                  <label class="slader-arrow-1 right" for="slide-2"></label>
                   <label class="slider-arrow-2 left" for="slide-1"></label>
                 </div>
-            </div>
-         
+            </li>
+          
+            
+            <li class="promo-box promo-discounts"><p>Скидки 50%</p><a class="button transparent-button" href="">На 350 товаров</a></li>
+           <li class="promo-box promo-delivery"><p>Доставка</p><a class="button transparent-button" href="">Доставка</a></li>
+          </ul>
+      
 
-
-          <li class="promo-box promo-discounts"><p>Скидки 50%</p><a class="button transparent-button" href="">На 350 товаров</a></li>
-          <li class="promo-box promo-delivery"><p>Доставка</p><a class="button transparent-button" href="">Доставка</a></li>
-         </ul>
       </section>
       
 
       <section>
-        <div class="popular">
-          <h2 class="section-heading">Популярные товары:</h2>  
-          <a class="button red-button" href="">Все популярные товары</a> 
-        </div>
+
+          <div class="popular">
+            <h2 class="section-heading">Популярные товары:</h2>  
+            <a class="button red-button" href="">Все популярные товары</a> 
+          </div>
 
           <ul class="product-list">  
             <li class="product-item">
@@ -120,7 +121,7 @@
               <span class="new-price">22500 P.</span> 
             </li>
 
-              <!--new-->
+        
 
             <li class="product-item">            
               <div class="image-block">
@@ -145,7 +146,6 @@
               <span class="new-price">25500 P.</span>
             </li>
 
-            <!--new-->
 
             <li class="product-item">
               <div class="image-block">
@@ -164,11 +164,11 @@
             </div>
               </li>
             </ul>
-
-
-          </section>
+          </div>
+        </section>
 
           <section>
+            
             <div class="popular">
               <h2 class="section-heading">Популярные производители:</h2>  
               <a href="" class="button red-button">Все производители</a> 
@@ -188,7 +188,7 @@
               </li>
               <li class="manufacturers-item"> 
                 <a href=""> 
-                <img src="img/dewalt.png" width="" height="" alt="DeWALT">  
+                <img src="img/dewalt.png" width="" height="" alt="DeWALT"></a> 
               </li>
               <li class="manufacturers-item">
                 <a href="">
@@ -212,14 +212,15 @@
               </li>
               <li class="manufacturers-item">
                 <a href="">
-                <img src="img/metabo.png" width="" height="" alt="metabo">  
+                <img src="img/metabo.png" width="" height="" alt="metabo"></a>  
               </li>
             </ul>
-        
         </section>
+
+
         <section>
 
-
+          <div class="services-bar">
           <div class="services">
 
             <h2 class="section-heading">Сервисы</h2> 
@@ -228,7 +229,6 @@
 
 
 
-            <!--left-->
             <div class="service-switch">
 
               <input name="service" type="radio" id="switch-1" value="delivery" checked>
@@ -241,7 +241,7 @@
               <label for="switch-3">Кредиты</label>
             </div>
 
-            <!--middle-->
+           
             <div class="service-active">
              <div class="service-click delivery-click">
                 <h3>Доставка</h3>
@@ -261,9 +261,12 @@
               </div>
               </div>
             </div>
-         
-        </section>
-        <section class="about-us">
+            </div>
+         </section>
+
+
+        <section class="company-information">
+
           <div class="about-company">
             <h2 class="section-heading">Компания "Техномарт"</h2> 
              <p> Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.
@@ -278,38 +281,24 @@
             </ul>
             <a class="button red-button" href="">Подробнее о компании</a> 
           </div>
-        </section>
-        <section>
-            <div class="contact-company">
+
+          <div class="contact-company">
               <h2 class="section-heading">Контакты</h2>
               <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
               <a href=""> 
                  <img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., д.19">
               </a>
-            </div>
-         <!--div class="modal modal-map"-->
-           <div class="feedback-wrapper">
-              <a class="button red-button" href="#feedback.html">Заблудились? Напишите нам!</a> 
-
-              <div class="modal modal-feedback">
-                    <form class="feedback-form" type="file" action="" method="post">
-                      <label for="user-name">Ваше имя</label>
-                      <input class="feedback-field" type="text" id="user-name" name="user" placeholder="Имя Фамилия">
-                      <label for="user-email">Ваш e-mail</label>
-                      <input class="feedback-field" id="user-email" type="email" name="user" placeholder="email@example.com">
-                      <label for="user-text">Текст письма</label>
-                      <input class="feedback-field" id="user-text" type="text" name="user" placeholder="В свободной форме">
-                      <button class="modal-close" type="button">Отправить</button>
-                    </form>
-                     <button type="button">Закрыть</button>
+              <div class="feedback-wrapper">
+                 <a class="button red-button" href="#feedback.html">Заблудились? Напишите нам!</a> 
               </div>
-          </section>
-    </main>
+          </div>
+      </section>
 
-    
+      </main>
 
-    <footer class="main-footer">
-      <div class="top-footer">
+      <footer class="main-footer">
+        <div class="top-footer-bar">
+        <div class="top-footer">
 
         <div class="logo-wrapper">
            <a href="" class="logo"><img src="img/logo.svg" width="108" height="18" alt="Логотип магазина"></a>
@@ -335,6 +324,8 @@
              <li><a class="yellow-link" href="">Спецпредложения</a></li> 
             </ul>
           </div>
+        </div>
+        <div class="bottom-footer-bar">
         <div class="bottom-footer">
           <div class="copyright">
             <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
@@ -358,7 +349,29 @@
             <a class="yellow-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
+      </div>
     </footer>
+
+   
+
+    <!--div class="modal modal-map"-->
+    
+
+   <div class="modal modal-feedback">
+                    <form class="feedback-form" type="file" action="" method="post">
+                      <label for="user-name">Ваше имя</label>
+                      <input class="feedback-field" type="text" id="user-name" name="user" placeholder="Имя Фамилия">
+                      <label for="user-email">Ваш e-mail</label>
+                      <input class="feedback-field" id="user-email" type="email" name="user" placeholder="email@example.com">
+                      <label for="user-text">Текст письма</label>
+                      <input class="feedback-field" id="user-text" type="text" name="user" placeholder="В свободной форме">
+                      <button class="modal-close" type="button">Отправить</button>
+                    </form>
+                     <button type="button">Закрыть</button>
+              </div>
+          </section>
+    </main>
+
 
 </body>
 </html>
