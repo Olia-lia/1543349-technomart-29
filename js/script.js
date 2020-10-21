@@ -21,20 +21,20 @@ openForm.addEventListener("click", function (evt) {
 closeForm.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modalFeedback.classList.remove("modal-show");
- });
+});
 
 
 
 modalForm.addEventListener("submit", function (evt) {
-   
-    if (!nameFieldForm.value || !emailFieldForm.value || !textFieldForm.value) {
-    	 evt.preventDefault();}
-    	 else  {
-    	 if (isStorageSupport) {
-      localStorage.setItem("emaill", emailFieldForm.value);
-  		}
+ 
+  if (!nameFieldForm.value || !emailFieldForm.value || !textFieldForm.value) {
+    evt.preventDefault();}
+    else  {
+      if (isStorageSupport) {
+        localStorage.setItem("emaill", emailFieldForm.value);
+      }
     }
-});
+  });
 
 
 document.addEventListener("keydown", function (evt) {
@@ -95,33 +95,65 @@ function showSlide(n) {
   if (n < 1) {
     slideNumber = slides.length;
   }
-    for (i = 0; i < slides.length; i++) {
+  for (i = 0; i < slides.length; i++) {
     slides[i].classList.remove("slide-current");
   }
-      for (i = 0; i < controls.length; i++) {
+  for (i = 0; i < controls.length; i++) {
     controls[i].classList.remove("slider-control-current"); 
   }
 
-    slides[slideNumber-1].classList.add("slide-current");
-    controls[slideNumber-1].classList.add("slider-control-current");};
+  slides[slideNumber-1].classList.add("slide-current");
+  controls[slideNumber-1].classList.add("slider-control-current");};
 
 
-function nextSlides(n) {
-  showSlide(slideNumber += 1);
-}
-function currentSlide (n) {
-  showSlide(slideNumber = n);
-}
-nextSlide.onclick = function() {
-  nextSlides(-1);
-}
+  function nextSlides(n) {
+    showSlide(slideNumber += 1);
+  }
+  function currentSlide (n) {
+    showSlide(slideNumber = n);
+  }
+  nextSlide.onclick = function() {
+    nextSlides(-1);
+  }
 
-previousSlide.onclick = function() {
-  nextSlides(+1);
-}  
+  previousSlide.onclick = function() {
+    nextSlides(+1);
+  }  
 
 
 
+
+const slidesService = document.querySelectorAll(".slide-service"); 
+
+const controlService = document.querySelectorAll(".service-control");
+
+let slideIndex = 1;
+
+
+showService(slideIndex);
+
+function showService(n) {
+  let i;
+  if (n > slidesService.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slidesService.length;
+  }
+  for (i = 0; i < slidesService.length; i++) {
+    slidesService[i].classList.remove("slide-current");
+  }
+  for (i = 0; i < controlService.length; i++) {
+    controlService[i].classList.remove("service-current"); 
+  }
+
+  slidesService[slideIndex-1].classList.add("slide-current");
+  controlService[slideIndex-1].classList.add("service-current");};
+
+
+ function currentService (n) {
+    showService(slideIndex = n);
+  }
 
 
 
