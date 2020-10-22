@@ -241,24 +241,16 @@ input[type="radio"].visually-hidden {
 }
 
 
-
 .logo img{
 	padding: 12px 56px 17px 56px;
 	
 }
 
-/*.logo::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 220px;
-	height: 47px;
-	text-align: center;
-	background: var(--basic-red);
-	box-shadow: inset 0px -5px 0px var(--logo-shadow-red);
-}*/
-
 .logo:focus {
+	outline: none;
+}
+
+.logo:focus img {
 	outline: none;
 	background-color: var(--special-active-red);
 
@@ -1848,7 +1840,7 @@ input[type="number"]:focus {
 .input-radio + .filter-radio::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -31px;
   top: -5px;
   width: 18px;
   height: 18px;
@@ -1933,9 +1925,12 @@ input[type="number"]:focus {
 	fill: var(--black);
 }
 
+.icon-price:focus  {
+	outline: none;
+}
+
 .icon-price:focus path {
 	fill: var(--black);
-	outline: none;
 }
 
 .icon-price:active  path {
