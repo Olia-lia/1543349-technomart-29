@@ -1447,7 +1447,6 @@ input[type="radio"].visually-hidden {
 .catalog-heading {
 	font-size: 30px;
 	line-height: 30px;
-	width: 940px;
 	color: var(--basic-cian-blue);
 	text-transform: uppercase;
 }
@@ -1559,6 +1558,7 @@ input[type="radio"].visually-hidden {
 
 	font-family: "PT Sans", Arial, sans-serif;
 	color: var(--black);
+	padding-bottom: 40px;
 }
 
 .container {
@@ -1686,6 +1686,9 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 27px;
 }
 
+.filter ul:last-of-type {
+	margin-top: 21px;
+}
 
 .filter-item:not(:last-of-type) {
 	margin-bottom: 20px;
@@ -1840,8 +1843,8 @@ input[type="number"]:focus {
 .input-radio + .filter-radio::before {
   content: "";
   position: absolute;
-  left: -31px;
-  top: -5px;
+  left: -35px;
+  top: -2px;
   width: 18px;
   height: 18px;
   border: 3px solid var(--extra-light-grey);
@@ -1851,8 +1854,8 @@ input[type="number"]:focus {
 .input-radio:checked + .filter-radio::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -23px;
+  top: 6px;
+  left: -27px;
   width: 8px;
   height: 8px;
   background-color: var(--extra-light-grey);
@@ -1945,6 +1948,7 @@ input[type="number"]:focus {
 .catalog-list {
 	list-style: none;
 	margin-top: 8px;
+	margin-bottom: 18px;
 	padding: 0;
 }
 
@@ -1960,6 +1964,7 @@ input[type="number"]:focus {
 	line-height: 18px;
 	text-transform: uppercase;
 }
+
 .pagination-item {
 	height: 38px;
 }
@@ -1984,7 +1989,7 @@ input[type="number"]:focus {
 .pagination-item a:hover,
 .pagination-item a:focus {
 	border-color: var(--basic-red);
-	color: var(--white);
+	color: var(--black);
 }
 
 .pagination-current a,
@@ -2002,12 +2007,15 @@ input[type="number"]:focus {
 .blog {
 	background-color: var(--basic-background);
 	font-family: "PT Sans", Arial, sans-serif;
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 
 }
 
 .blog h2 {
+	margin: 0;
+	padding: 0;
 	padding-top: 64px;
+	margin-bottom: 25px;
 }
 
 /*******Modal*********/
