@@ -1143,21 +1143,18 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0;
 }
 
-.service-control:hover,
-.service-control:focus {
+.service-control:hover{
 	background-color: var(--dark-cyan-blue);
 	outline: none;
 }
 
-
-.service-control:active, 
+.service-control:active,
 .service-current {
 	background-color: var(--white);
 	color: var(--basic-cian-blue);
 	box-shadow: none;
+	outline: none;
 }
-
-
 
 .service-list {
 	width: 619px;
@@ -1697,6 +1694,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 27px;
 }
 
+
 .filter-item:not(:last-of-type) {
 	margin-bottom: 20px;
 }
@@ -1712,14 +1710,12 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-
-
 /***Price-range******/
 
 .range-controls {
 	position: relative;
   	height: 41px;
-  	margin-bottom: 15px;
+  	margin-bottom: 10px;
   	padding-top: 39px;
   	background-color: var(--beige);
   	border-radius: 5px;
@@ -1754,6 +1750,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle-min {
   	left: 18px;
+
 }
 
 .range-controls .toggle-max {
@@ -1763,6 +1760,9 @@ input[type="radio"].visually-hidden {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .price-dash {
@@ -1818,14 +1818,13 @@ input[type="number"]:focus {
 	 position: relative;
 	 display: block;
   	 cursor: pointer;
-  	 /*user-select: none;*/
-  	 margin-left: 31px;
+  	 margin-left: 35px;
 }
 
 .input-checkbox + .filter-checkbox::before {
   	content: "";
   	position: absolute;
-  	left: -31px;
+  	left: -35px;
   	top: 0;
   	width: 19px;
    	height: 19px;
@@ -1837,7 +1836,7 @@ input[type="number"]:focus {
   content: "";
   position: absolute;
   top: 0;
-  left: -31px;
+  left: -35px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -1849,7 +1848,7 @@ input[type="number"]:focus {
 .input-radio + .filter-radio::before {
   content: "";
   position: absolute;
-  left: -31px;
+  left: -35px;
   top: -5px;
   width: 18px;
   height: 18px;
@@ -1919,30 +1918,33 @@ input[type="number"]:focus {
 }
 
 .sort-price-icon {
-	width: 80px;
+	width: 70px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 
 }
 
-.icon-up svg {
-	transform: rotate(180deg);
-	margin-right: 21px;
+.icon-up svg{
+	transform: rotate(180deg); 
 }
 
-.icon-price path:hover {
+.icon-price:hover path {
 	fill: var(--black);
 }
 
-.icon-price path:active {
+.icon-price:focus path {
+	fill: var(--black);
+	outline: none;
+}
+
+.icon-price:active  path {
 	fill: var(--basic-red);
 }
 
-.icon-price-current path {
+.icon-price-current  path {
 	fill: var(--basic-red);
 }
-
 
 
 .catalog-list {
@@ -1986,12 +1988,14 @@ input[type="number"]:focus {
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-	border-color: var(--basic-red)
+	border-color: var(--basic-red);
+	color: var(--white);
 }
 
 .pagination-current a,
 .pagination-item a:active  {
   background-color: var(--basic-red);
+  color: var(--white);
 }
 
 /*Article*/
