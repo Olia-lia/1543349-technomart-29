@@ -121,7 +121,7 @@ function showSlide(n) {
   }  
 
 
-
+//Слайдер(сервисы)
 
 const slidesService = document.querySelectorAll(".slide-service"); 
 
@@ -154,9 +154,4 @@ function showService(n) {
  function currentService (n) {
     showService(slideIndex = n);
   }
-
-
-
-
-
 
