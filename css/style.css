@@ -898,12 +898,11 @@ input[type="radio"].visually-hidden {
 .red-price::after {
 	content: "";
 	position: absolute;
-	width: 26px;
-	height: 26px;
-	right: -13px;
-	top: 6px;
+	width: 26.8px;
+	height: 26.8px;
+	right: -13.5px;
+	top: 5.5px;
 	background-color: var(--basic-red);
-	outline: 2px solid transparent;
 	transform: rotate(45deg);
 	z-index: -1;
 
@@ -1141,7 +1140,8 @@ input[type="radio"].visually-hidden {
 }
 
 .service-control:active,
-.service-current {
+.service-current,
+.service-current:hover  {
 	background-color: var(--white);
 	color: var(--basic-cian-blue);
 	box-shadow: none;
@@ -1169,6 +1169,14 @@ input[type="radio"].visually-hidden {
 
 .slide-delivery {
 	background: url(../img/delivery-background.png) no-repeat right bottom; 
+}
+
+.slide-guarantee {
+	background: url(../img/guarantee-background.png) no-repeat right bottom;
+}
+
+.slide-credit {
+	background: url(../img/credit-background.png) no-repeat right bottom;
 }
 
 .slide-credit .red-button {
@@ -1966,7 +1974,7 @@ input[type="number"]:focus {
 }
 
 .pagination-item {
-	height: 38px;
+	height: 36px;
 }
 
 .pagination-item a {
@@ -1974,7 +1982,7 @@ input[type="number"]:focus {
   	padding: 10px 15px;
   	color: var(--black);
   	text-transform: uppercase;
-  	border: 1px solid var(--extra-light-grey);
+  	border: 1px solid var(--super-extra-light-grey);
   	border-radius: 2px;
 }
 
@@ -1988,14 +1996,19 @@ input[type="number"]:focus {
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-	border-color: var(--basic-red);
+	border-color: var(--extra-light-grey);
 	color: var(--black);
 }
 
+.pagination-item a:active {
+	border-color: var(--basic-red);
+}
+
 .pagination-current a,
-.pagination-item a:active  {
+.pagination-current a:hover  {
   background-color: var(--basic-red);
   color: var(--white);
+  border: 1px solid var(--basic-red);
 }
 
 /*Article*/
