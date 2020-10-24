@@ -898,10 +898,10 @@ input[type="radio"].visually-hidden {
 .red-price::after {
 	content: "";
 	position: absolute;
-	width: 26.8px;
-	height: 26.8px;
-	right: -13.5px;
-	top: 5.5px;
+	width: 26px;
+	height: 26px;
+	right: -13px;
+	top: 6px;
 	background-color: var(--basic-red);
 	transform: rotate(45deg);
 	z-index: -1;
