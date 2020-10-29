@@ -155,3 +155,34 @@ function showService(n) {
     showService(slideIndex = n);
   }
 
+
+//pop-up
+
+
+let product = document.querySelectorAll(".product-item");
+let openMessage = document.querySelectorAll(".button-buy");
+const bookmarksBtn = document.querySelectorAll(".button-bookmarks");
+const basket = document.querySelector(".basket");
+const bookmarks = document.querySelector(".bookmarks");
+
+var addClickHandlerBasket = function (openMessage, product) {
+  openMessage.addEventListener('click', function () {
+    basket.classList.add("modal-order-background");
+  });
+};    
+
+for (var i = 0; i < product.length; i++) {
+  addClickHandlerBasket(openMessage[i], product[i]);
+}
+
+var addClickHandlerBookmarks = function (bookmarksBtn, product) {
+  bookmarksBtn.addEventListener('click', function () {
+    bookmarks.classList.add("modal-order-background");
+
+  });
+};    
+
+
+for (var i = 0; i < product.length; i++) {
+  addClickHandlerBookmarks(bookmarksBtn[i], product[i]);
+}

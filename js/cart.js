@@ -2,7 +2,7 @@
 const modalOrder = document.querySelector(".modal-order");
 let product = document.querySelectorAll(".product-item");
 let openMessage = document.querySelectorAll(".button-buy");
-const ll = modalOrder.querySelector(".further-actions");
+const orderButtons = modalOrder.querySelector(".further-actions");
 const bookmarksBtn = document.querySelectorAll(".button-bookmarks");
 const closeMessage = modalOrder.querySelector(".modal-close");
 const basket = document.querySelector(".basket");
@@ -15,7 +15,7 @@ var addClickHandlerBasket = function (openMessage, product) {
 	openMessage.addEventListener('click', function () {
 		modalOrder.classList.add("modal-show-order");
 		basket.classList.add("modal-order-background");
-		ll.focus();
+		orderButtons.focus();
 	});
 };		
 

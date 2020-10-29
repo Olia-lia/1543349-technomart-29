@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-catalog-body">
   <header class="main-header">
@@ -39,8 +39,8 @@
       </div>
 
       <div class="contacts-header">
-        <div class="phone-number">
-          <p>+7 (812) 555-05-05</p></div>
+        <div class="phone-number-wrapper">
+          <a class="phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a></div>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
@@ -78,7 +78,7 @@
         <h3>Материалы</h3> 
         <a class="button transparent-button" href="">На любой вкус</a>
       </li>  
-      <li class="promo-box promo-instruments"><h3>Инструменты</h3><a class="button transparent-button" href="">На все случаи</a></li> 
+      <li class="promo-box promo-instruments"><h3>Инструмент</h3><a class="button transparent-button" href="">На все случаи</a></li> 
       <li class="promo-box  promo-technics"><h3>Техника</h3><a class="button transparent-button" href="">Для стройки</a></li>
 
       <li class="slider-box"> 
@@ -259,7 +259,7 @@
         <div class="service-block container">
 
           <h2 class="section-heading">Сервисы</h2> 
-          <p class="">Хороший интернет магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          <p>Хороший интернет магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
 
           <div class="service-box">
@@ -267,7 +267,7 @@
             <div class="service-controls">
               <button class="service-control service-current" type="button" onclick="currentService(1)">Доставка</button>
               <button class="service-control" type="button" onclick="currentService(2)">Гарантии</button>
-              <button class="service-control" type="button" class="current" onclick="currentService(3)">Кредит</button>
+              <button class="service-control current" type="button" onclick="currentService(3)">Кредит</button>
             </div>
             <ul class="slider-list service-list">
               <li class="slide-service slide-delivery slide-current">
@@ -358,7 +358,7 @@
           <p>© 2010–2019 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
         </div>
       <ul class="social-list">
-        <li><a class="social-button" href=""><img src="img/icon-vk.png" alt="Вконтакте"></a></li> 
+        <li><a class="social-button" href=""><img src="img/icon-vk.png" alt="Вконтакте" width="25" height="14"></a></li> 
         <li><a class="social-button" href=""><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук"></a></li>
         <li><a class="social-button" href=""><img src="img/icon-insta.png" width="21" height="21" alt="Инстаграм"></a></li>
       </ul>
@@ -379,7 +379,7 @@
 <section class="modal modal-feedback">
   <div class="modal-content">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form class="feedback-form" action="" method="post">
+    <form class="feedback-form" method="post" action="#">
       <div class="user-fields">
         <label for="user-name">Ваше имя:<input class="form-name" type="text" id="user-name" name="user" placeholder="Имя Фамилия" required></label>
         <label for="user-email">Ваш e-mail:<input class="form-email" id="user-email" type="email" name="user" placeholder="email@example.com"></label>
@@ -402,7 +402,7 @@
 
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 
 </body>
 </html>
